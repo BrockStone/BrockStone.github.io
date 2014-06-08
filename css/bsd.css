@@ -339,7 +339,10 @@ nav h2{
 	}
 
 	/* ---- ASSETS ---- */
-	
+	.skills{
+		width: 100%;
+		margin: 0 auto;
+	}
 	.fourth{
 		clear: left;
 		width: 100%;
@@ -352,11 +355,20 @@ nav h2{
 		font-size: 1.1em;
 	}
 
-	/* ---- SKILLS ---- */
+	/* ---- RECENT WORK ---- */
 	
-	.skills{
+	.half{
 		width: 100%;
-		margin: 0 auto;
+		clear: left;
+		height: 450px;
 	}
+	.half p{
+		font-size: 1.1em;
+	}
+	.half h4{
+		font-size: 1.3em;
+	}
+	
+
 
 }
