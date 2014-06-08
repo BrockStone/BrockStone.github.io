@@ -1,4 +1,4 @@
 BrockStoneDesign
 ================
 
-Person Porfolio Website
+Personal Porfolio Website
