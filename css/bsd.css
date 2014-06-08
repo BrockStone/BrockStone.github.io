@@ -204,6 +204,9 @@ nav h2{
 .skill{
 	background-color: #ffffff;
 }
+.brd_right{
+	border-right:1px solid #848484;
+}
 /*
 ----------------------
 ---------  RECENT WORK
@@ -305,14 +308,13 @@ nav h2{
 		font-size: 1.5em;
 	}
 
-	.column:nth-child(2) {
-		text-align: center;
-		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-	}
+	
 }
 /* ---- 400 px (iPhone) ---- */
 @media screen and (max-width: 25em) {
 
+	/* ---- HEADER (Main Logo) ---- */
+	
 	.header {
 		font-size: 80%;
 		height: 50vh;
@@ -320,22 +322,38 @@ nav h2{
 	#logo{
 		margin-top: 25px;
 	}
-
-	.codrops-top {
-		font-size: 120%;
+	.arrow, .arrow2{
+		visibility: hidden;
 	}
 
-	.codrops-icon span {
-		display: none;
+	/* ---- ABOUT ---- */
+	
+	.aboutinner{
+		width: 100%;
+		padding: 0px;
+		font-size: .8em;
 	}
+	.about{
+		width: 100%;
+		height: 620px;
+	}
+
+	/* ---- ASSETS ---- */
+	
 	.fourth{
 		clear: left;
 		width: 100%;
+		border-style: hidden;
 	}
-	.about p{
-		width: 100%;
-		padding: 0px;
+	.fourth h4{
+		font-size: 1.3em;
 	}
+	.fourth p{
+		font-size: 1.1em;
+	}
+
+	/* ---- SKILLS ---- */
+	
 	.skills{
 		width: 100%;
 		margin: 0 auto;
