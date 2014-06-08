@@ -217,10 +217,13 @@ nav h2{
 .details{
 	padding: 25px;
 	transition: all .3s ease-in-out;
+	height: 220px;
+
 }
 .details:hover{
 	background-color: #bcbcbc;
 	cursor: pointer;
+	border-top: 10px solid #05b1e0;
 }
 .work{
 	background-color: #dddddd;
