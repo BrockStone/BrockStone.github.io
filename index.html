@@ -5,6 +5,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Brock Stone Design</title>
+		<!-- 
+			____                  __   _____ __                   ____            _           
+		   / __ )_________  _____/ /__/ ___// /_____  ____  ___  / __ \___  _____(_)____ ____
+		  / __  / ___/ __ \/ ___/ //_/\__ \/ __/ __ \/ __ \/ _ \/ / / / _ \/ ___/ / __  / __ \
+		 / /_/ / /  / /_/ / /__/  <  ___/ / /_/ /_/ / / / /  __/ /_/ /  __(__  ) / /_/ / / / /
+		/_____/_/   \____/\___/_/|_|/____/\__/\____/_/ /_/\___/_____/\___/____/_/\__  /_/ /_/ 
+		                                                                        /____/   
+		-->
 		<meta name="description" content="Brock Stone Web Design and Developer Portfolio Site" />
 		<meta name="keywords" content="UI/UX Design, Front End Development, HTML5, CSS3, Smooth, Sexy Web Design" />
 		<meta name="Author" content="Brock Stone" />
@@ -14,37 +22,33 @@
 		<link rel="stylesheet" type="text/css" href="css/bsd.css" />
 	</head>
 	<body>
-		<div id="st-container" class="st-container">
-			<!-- content push wrapper -->
-			<div class="st-pusher">
-				<!-- 	
-					example menus 
-					these menus will be under the push wrapper
-				-->
+		<div id="st-container" class="st-container"> <!-- Content push wrapper -->
+			<div class="st-pusher"> <!-- Menus under push wrapper -->
+				
+				<!-- Slide out Nav -->
 				<nav class="st-menu st-effect-3" id="menu-3">
 					<h2><img src="img/nav_logo.png"></h2>
 					<ul>
-						<li><a class="icon icon-data" href="#about">About Me</a></li>
-						<li><a class="icon icon-location" href="#">Assets</a></li>
-						<li><a class="icon icon-study" href="#">Recent Works</a></li>
-						<li><a class="icon icon-photo" href="#">Blog <i>(Coming Soon)</i></a></li>
-						<li><a class="icon icon-wallet" href="#">Resume</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Assets</a></li>
+						<li><a href="#">Recent Works</a></li>
+						<li><a href="#">Blog <i>(Coming Soon)</i></a></li>
+						<li><a href="#">Resume</a></li>
 					</ul>
 				</nav>
-
-				<!-- this is the wrapper for the content -->
+				
+				<!-- Content Wrapper -->
 				<div class="st-content">
-					<!-- extra div for emulating position:fixed of the menu -->
-					<div class="st-content-inner">
+					<div class="st-content-inner"> <!-- extra div for emulating position:fixed of the menu -->
+
+						<!-- Navigation Action  -->
 						<div id="st-trigger-effects" class="navbtn">
-							
-							<!-- Navigation Action Button  -->
 							<section data-effect="st-effect-3">
 								<!-- to activate slider  -->
 								<span><p class="navtoggle"></p></span>
 							</section>
-
 						</div>
+
 						<!-- Header (Logo Animation) -->
 						<header class="header">
 							<!-- Logo -->
@@ -65,7 +69,7 @@
 						</header>
 
 						<!-- About -->
-						<div class="main clearfix about">
+						<div class="main clearfix about shadow">
 							<div class="columnhead">
 								<h1>About Me</h1>
 								<p>Get to know me a little..</p>
@@ -75,11 +79,11 @@
 								<div class="aboutinner">
 									<p>I'm a UI/UX designer and frontend developer from Pittsburgh, Pa. I create sexy, engaging user experiences for the web. I enjoy keeping up to date with the latest programming technologies &amp; trends to integrate into my own projects. When I am not building in pixels I enjoy making videos with my GoPro, Snowboarding, Biking, Cooking, Reading, Pretending to be a Photogrpher, Drawing, Hiking with my husky Denali and getting my hands dirty with anything mechanical.</p>
 								</div>
-							</div> / <!-- column -->
+							</div> <!-- column -->
 						</div> <!-- /main about -->
 
 						<!-- Assets (Skills) -->
-						<div class="main clearfix skill">	
+						<div class="main clearfix assets">	
 							<div class="columnhead">
 								<h1>Assets</h1>
 								<p>Current Web Design &amp; Development Skills</p>
@@ -127,12 +131,12 @@
 										<li><p>Detail Oriented</p></li>
 										<li><p>Initiator</p></li>
 									</div>
-								</div> <!-- / skills -->	
-							</div> <!-- column -->
+								</div> <!-- /skills -->	
+							</div> <!-- /column -->
 						</div>	<!-- /main assets -->
 
 						<!-- Projects -->
-						<div class="main clearfix work">
+						<div class="main clearfix work shadow">
 							<div class="columnhead">
 								<h1>Recent Projects</h1>
 								<p>Collection of recent projects ive been working on</p>
@@ -168,8 +172,8 @@
 											<p>Pure JS MVC Framwork for a "Tidy" task manager application.</p>
 										</div>
 									</div> 
-								</div> <!-- / work inner -->
-							</div>  <!-- column -->
+								</div> <!-- /work inner -->
+							</div>  <!-- /column -->
 						</div>	<!-- /main work -->
 
 						<!-- Contact -->
@@ -184,7 +188,6 @@
 										<a class="btn-outline" href="">Send Me an Email</a>
 										<a class="btn-outline" href="">Download Resume</a>
 									</div>
-
 									<div class="social">
 										<a href=""><img src="img/github.png"></a>
 										<a href=""><img src="img/linkedin.png"></a>
@@ -193,15 +196,13 @@
 									</div>
 								</div>
 							</div>  <!-- column -->
-						</div>	<!-- /main work -->
+						</div>	<!-- /main contact -->
 
 						<!-- Footer -->
 						<div class="main clearfix footer">
-							<!-- <div class="column"> -->
-								<div class="footerinner">
-									<p>&copy; 2014 Brock Stone Design</p>
-								</div>
-							<!-- </div> -->
+							<div class="footerinner">
+								<p>&copy; 2014 Brock Stone Design</p>
+							</div>
 						</div>
 
 
@@ -210,7 +211,11 @@
 			</div><!-- /st-pusher -->
 		</div><!-- /st-container -->
 
-		<!-- Mon Javascript Fantastique -->
+		<!-- 
+		||||||||||||||||||||||||||||||||||
+			Mon Javascript Fantastique! 
+		||||||||||||||||||||||||||||||||||
+		-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/sidebarEffects.js"></script>

@@ -140,9 +140,10 @@ button:hover {
 	position: fixed;
 	z-index: 2;
 	transition: all .3s ease-in-out;
+	margin-top: -5px;
 }
 .navtoggle:hover{
-	background: url(../img/navbarhov.png) no-repeat;
+	background: url(../img/navbarhovr.png) no-repeat;
 	width: 62px;
 	height: 48px;
 }
@@ -175,6 +176,10 @@ nav h2{
 --------------  ASSETS
 ----------------------
 */
+.assets{
+	height: 670px;
+	background-color: #ffffff;
+}
 .fourth{
 	float: left;
 	width: 25%;
@@ -201,9 +206,6 @@ nav h2{
 	margin: 0 auto;
 	height: 430px;
 }
-.skill{
-	background-color: #ffffff;
-}
 .brd_right{
 	border-right:1px solid #848484;
 }
@@ -224,12 +226,13 @@ nav h2{
 
 }
 .details:hover{
-	background-color: #bcbcbc;
+	background-color: #CCCCCC;
 	cursor: pointer;
 	border-top: 10px solid #05b1e0;
 }
 .work{
 	background-color: #dddddd;
+	height: 640px;
 }
 .workinner{
 	max-width: 980px;
@@ -242,6 +245,9 @@ nav h2{
 -------------  CONTACT
 ----------------------
 */
+.contact{
+	background-color: #ffffff;
+}
 .contactinner{
 	max-width: 960px;
 	margin: 0 auto;
@@ -262,10 +268,7 @@ nav h2{
     border: 2px solid #05b1e0;
     transition: all .3s ease-in-out;
     padding: 25px 75px;
-    -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; /* future proofing */
-	-khtml-border-radius: 10px; /* for old Konqueror browsers, why not? */
+    margin-left: 20px;
 }
 
 .btn-outline:hover,
@@ -284,9 +287,13 @@ nav h2{
 	background-color: #232323;
 	max-height: 50px;
 	text-align: center;
-
+	color: #ffffff;
 }
-
+.shadow {
+   -moz-box-shadow:    inset 0 0 2px #000000;
+   -webkit-box-shadow: inset 0 0 2px #000000;
+   box-shadow:         inset 0 0 1px #000000;
+}
 
 /*
 ----------------------
