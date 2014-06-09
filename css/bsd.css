@@ -66,6 +66,36 @@ button {
 button:hover {
 	background: #2c774b;
 }
+.btn-outline {
+    font-size: 20px;
+    color: #05b1e0;
+    border: 2px solid #05b1e0;
+    transition: all .3s ease-in-out;
+    padding: 25px 75px;
+    margin-left: 20px;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    color: #ffffff;
+    background: #05b1e0;
+}
+.btn-outline-sm {
+    font-size: 18px;
+    color: #05b1e0;
+    transition: all .3s ease-in-out;
+    padding: 15px 35px;
+    /*border: 1px solid #303030;*/
+}
+.btn-outline-sm:hover,
+.btn-outline-sm:focus,
+.btn-outline-sm:active,
+.btn-outline-sm.active {
+    color: #ffffff;
+    background: #303030;
+}
 .navbtn{
 	z-index: 2;
 	float: left;
@@ -232,13 +262,16 @@ nav h2{
 }
 .work{
 	background-color: #dddddd;
-	height: 640px;
+	height: 690px;
 }
 .workinner{
 	max-width: 980px;
 	margin: 0 auto;
 	height: 430px;
 	color: #232323;
+}
+.gallery-link{
+	text-align: center;
 }
 /*
 ----------------------
@@ -262,22 +295,6 @@ nav h2{
 	text-align: center;
 }
 
-.btn-outline {
-    font-size: 20px;
-    color: #05b1e0;
-    border: 2px solid #05b1e0;
-    transition: all .3s ease-in-out;
-    padding: 25px 75px;
-    margin-left: 20px;
-}
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    color: #ffffff;
-    background: #05b1e0;
-}
 /*
 ----------------------
 --------------- FOOTER
