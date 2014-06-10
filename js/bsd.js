@@ -2,21 +2,21 @@
 $(document).ready(function() {
 	console.log("JQuery Ready");
 	//Initial Hide of Name 
-	$("#btmlogo").hide();
+	// $("#btmlogo").hide();
 	$("#logo").hide();
-	$(".arrow").hide();
-	$(".arrow2").hide();
+	// $(".arrow").hide();
+	// $(".arrow2").hide();
 	// $(".hideme").hide();
     // Logo and Name Fade in
     $("#logo").fadeIn(1500, function() {
-    	$("#btmlogo").fadeIn(1000, function() {
-    			$(".navtoggle").hover();
-				$(".arrow").slideDown(500);
-				$(".arrow2").slideDown(500);
-    		 	fadeloop('.arrow2',1800,500,true);
-    		 	fadeloop('.arrow',1500,800,true);
+    // 	$(".about").fadeIn(1000, function() {
+    // 			$(".navtoggle").hover();
+				// $(".arrow").slideDown(500);
+				// $(".arrow2").slideDown(500);
+    // 		 	fadeloop('.arrow2',1800,500,true);
+    // 		 	fadeloop('.arrow',1500,800,true);
     		
-  		});
+  		// });
   	});
 
     // Fade loop

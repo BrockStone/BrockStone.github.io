@@ -71,7 +71,7 @@ button:hover {
     color: #05b1e0;
     border: 2px solid #05b1e0;
     transition: all .3s ease-in-out;
-    padding: 25px 75px;
+    padding: 15px 35px;
     margin-left: 20px;
 }
 
@@ -93,6 +93,21 @@ button:hover {
 .btn-outline-sm:focus,
 .btn-outline-sm:active,
 .btn-outline-sm.active {
+    color: #ffffff;
+    background: #303030;
+}
+.btn-outline-sm2 {
+	background-color: #05b1e0;
+    font-size: 18px;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    padding: 15px 55px;
+    /*border: 1px solid #303030;*/
+}
+.btn-outline-sm2:hover,
+.btn-outline-sm2:focus,
+.btn-outline-sm2:active,
+.btn-outline-sm2.active {
     color: #ffffff;
     background: #303030;
 }
@@ -119,8 +134,9 @@ button:hover {
 	text-align: center;
 	font-size: 1.2em;
 	clear: both;
-	padding: 1em 0;
 	color: #333;
+	margin-top: 45px;
+	margin-bottom: 25px;
 }
 /*
 ----------------------
@@ -135,12 +151,12 @@ button:hover {
 	margin: 0 auto;
 	padding: 3em;
 	text-align: center;
-	height: 100vh; /*vh (viewport height)*/
-	background: url(../img/broken_noise.png) repeat;
+	height: 50vh; /*vh (viewport height)*/
+	background-color: #31A5C8; 
 
 }
 #logo{
-	margin-top: 25vh;
+	margin-top: 5vh;
 }
 .header h1 {
 	
@@ -173,7 +189,7 @@ button:hover {
 	margin-top: -5px;
 }
 .navtoggle:hover{
-	background: url(../img/navbarhovr.png) no-repeat;
+	background: url(../img/navbarhovr2.png) no-repeat;
 	width: 62px;
 	height: 48px;
 }
@@ -186,19 +202,33 @@ nav h2{
 ----------------------
 */
 .about{
-	height: 400px;
-	background-color: #8bdef2;
+	height: 425px;
+	background-color: #F4F4F4;   /*31A5C8 BLUE*/
 	color: #232323;
 }
 .aboutinner{
 	width: 960px;
 	margin: 0 auto;
-	font-size: 1.2em;
-	text-align: center;
+	font-size: 1em;
  
 }
-.about p{
-	line-height: 1.5em;
+.about_left{
+	float: left;
+	width: 560px;
+}
+.about_right{
+	padding-left: 75px;
+	float: right;
+	width: 350px;
+	margin-top: 30px;
+	border-left: 1px solid #303030;
+}
+.about_right p{
+	margin-bottom: 35px;
+}
+.aboutinner p{
+	padding-right: 25px;
+	line-height: 1.6em;
 
 }
 /*
@@ -256,12 +286,12 @@ nav h2{
 
 }
 .details:hover{
-	background-color: #CCCCCC;
+	background-color: #F4F4F4;
 	cursor: pointer;
 	border-top: 10px solid #05b1e0;
 }
 .work{
-	background-color: #dddddd;
+	background-color: #ffffff;
 	height: 690px;
 }
 .workinner{
@@ -279,7 +309,7 @@ nav h2{
 ----------------------
 */
 .contact{
-	background-color: #ffffff;
+	background-color: #F4F4F4;
 }
 .contactinner{
 	max-width: 960px;
