@@ -156,7 +156,7 @@ button:hover {
 
 }
 #logo{
-	margin-top: 5vh;
+	margin-top: 25px;
 }
 .header h1 {
 	
@@ -198,46 +198,11 @@ nav h2{
 }
 /*
 ----------------------
---------------  ABOUT
-----------------------
-*/
-.about{
-	height: 425px;
-	background-color: #F4F4F4;   /*31A5C8 BLUE*/
-	color: #232323;
-}
-.aboutinner{
-	width: 960px;
-	margin: 0 auto;
-	font-size: 1em;
- 
-}
-.about_left{
-	float: left;
-	width: 560px;
-}
-.about_right{
-	padding-left: 75px;
-	float: right;
-	width: 350px;
-	margin-top: 30px;
-	border-left: 1px solid #303030;
-}
-.about_right p{
-	margin-bottom: 35px;
-}
-.aboutinner p{
-	padding-right: 25px;
-	line-height: 1.6em;
-
-}
-/*
-----------------------
 --------------  ASSETS
 ----------------------
 */
 .assets{
-	height: 670px;
+	height: 615px;
 	background-color: #ffffff;
 }
 .fourth{
@@ -267,7 +232,43 @@ nav h2{
 	height: 430px;
 }
 .brd_right{
-	border-right:1px solid #848484;
+	border-right:1px solid #DDDDDD;
+}
+/*
+----------------------
+--------------  ABOUT
+----------------------
+*/
+.about{
+	height: 425px;
+	background-color: #F4F4F4;   /*31A5C8 BLUE*/
+	/*background: url(../img/bsd_shadow.jpg);*/
+	color: #232323;
+}
+.aboutinner{
+	width: 960px;
+	margin: 0 auto;
+	font-size: 1em;
+ 
+}
+.about_left{
+	float: left;
+	width: 560px;
+}
+.about_right{
+	padding-left: 25px;
+	float: right;
+	width: 350px;
+	text-align: center;
+	border-left: 1px solid #DDDDDD;
+}
+.about_right p{
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+.aboutinner p{
+	line-height: 1.6em;
+
 }
 /*
 ----------------------
