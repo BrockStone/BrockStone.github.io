@@ -2,6 +2,7 @@
 bsd.controller('galCtrl', ['$scope',
 	
 	function ($scope) {
+		// Recent Projects 
 		$scope.projects = 
 		[
 			{
@@ -29,7 +30,4 @@ bsd.controller('galCtrl', ['$scope',
 			desc: "Pure JS MVC Framwork for a 'Tidy' task manager application."
 			}
 		]
-
-	$scope.name = "brock";
-
 }]);
