@@ -1,16 +1,21 @@
 'use strict';
 
-var app angular.module('brock', ['ng-route'])
-
+var bsd = angular.module('brock', [
+	'ngRoute'
+])
 	.config(function($routeProvider) {
-
-	$routeprovider
-
-		.when('/',{
-			templateUrl: 'views/main.html'
-			controller:
-		})
-		.otherwise('/',{
-			redirectTo: '/'
-		})
+		$routeProvider
+			//Main View 
+			.when('/', {
+				templateUrl: 'views/main.html',
+				controller: 'galCtrl'
+			})
+			// Gallery View 
+			.when('/gallery', {
+				templateUrl: 'views/gallery.html'
+				// controller: 'CtrlUser'
+			})
+			.otherwise({
+				redirectTo: '/'
+			});
 	});
