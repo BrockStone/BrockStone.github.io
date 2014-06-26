@@ -49,10 +49,10 @@ a:hover, a:focus {
 	position: relative;
 }
 button {
-	border: none;
-	padding: 0.6em 1.2em;
-	background: #388a5a;
-	color: #fff;
+	border: 2px solid #2fa4c7;
+	padding: 1.2em 3.6em;
+	background-color: #ffffff;
+	color: #2fa4c7;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
 	letter-spacing: 1px;
@@ -61,10 +61,13 @@ button {
 	display: inline-block;
 	margin: 3px 2px;
 	border-radius: 2px;
-	position: fixed;
+	float: left;
+
+
 }
 button:hover {
-	background: #2c774b;
+	color: #ffffff;
+	background: #2fa4c7;
 }
 .btn-outline {
     font-size: 20px;
@@ -152,6 +155,14 @@ button:hover {
 	padding: 3em;
 	text-align: center;
 	height: 50vh; /*vh (viewport height)*/
+	background-color: #31A5C8; 
+
+}
+.headercontact{
+	margin: 0 auto;
+	padding: 3em;
+	text-align: center;
+	height: 30vh; /*vh (viewport height)*/
 	background-color: #31A5C8; 
 
 }
@@ -335,6 +346,43 @@ nav h2{
 	margin-top: 50px;
 	text-align: center;
 }
+.contactleft{
+	width: 400px;
+	float: left;
+}
+
+.contactright{
+	width: 400px;
+	float: left;
+
+}
+.contactform{
+	width: 820px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.contactform input{
+	height: 45px;
+	width: 300px;
+	margin-bottom: 35px;
+	margin-top: 15px;
+
+}
+.contactform label{
+	float: left;
+	padding-left: 40px
+}
+textarea{
+	margin-top: 15px;
+	margin-bottom: 70px;
+}
+.contactbtn{
+	margin-left: 50px;
+	
+
+}
+
+
 
 /*
 ----------------------

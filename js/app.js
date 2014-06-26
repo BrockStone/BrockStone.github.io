@@ -10,7 +10,7 @@ var bsd = angular.module('brock', [
 				templateUrl: 'views/main.html',
 				controller: 'galCtrl'
 			})
-			// Gallery View 
+			// Gallery View  
 			.when('/gallery', {
 				templateUrl: 'views/gallery.html'
 				// controller: 'CtrlUser'
