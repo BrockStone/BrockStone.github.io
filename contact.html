@@ -1,116 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Brock Stone Design</title>
-		<!-- 
-			____                  __   _____ __                   ____            _           
-		   / __ )_________  _____/ /__/ ___// /_____  ____  ___  / __ \___  _____(_)____ ____
-		  / __  / ___/ __ \/ ___/ //_/\__ \/ __/ __ \/ __ \/ _ \/ / / / _ \/ ___/ / __  / __ \
-		 / /_/ / /  / /_/ / /__/  <  ___/ / /_/ /_/ / / / /  __/ /_/ /  __(__  ) / /_/ / / / /
-		/_____/_/   \____/\___/_/|_|/____/\__/\____/_/ /_/\___/_____/\___/____/_/\__  /_/ /_/ 
-		                                                                        /____/   
-		-->
-		<meta name="description" content="Brock Stone Web Design and Developer Portfolio Site" />
-		<meta name="keywords" content="UI/UX Design, Front End Development, HTML5, CSS3, Smooth, Sexy Web Design" />
-		<meta name="Author" content="Brock Stone" />
-		<link rel="shortcut icon" href="img/bsd_fav.ico" type="image/x-icon">
-		<link rel="icon" href="img/bsd_fav.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/bsd.css" />
-	</head>
-	<body>
-		<div id="st-container" class="st-container"> <!-- Content push wrapper -->
-			<div class="st-pusher"> <!-- Menus under push wrapper -->
+
+<!-- Contact Header (Logo Animation) -->
+<header class="headercontact">
+	<!-- Logo -->
+	<div id="logo_contact">
+		<a href="index.html"><img src="img/bsd_contact.png"></a>
+	</div>
+</header>
+
+<!-- Assets (Skills) -->
+<div class="assets clearfix">	
+	<div class="columnhead">
+		<h2>Contact Me</h2>
+		<p>Hey there, want to get ahold of me? Send me a message below.</p>
+		<div class="contactform">
+			<form name="contactForm" ng-submit="submitForm(userForm.$valid)">
+				<div class="contactleft">
+
+					<label>Name</label><br/>
+					<input type="text" name="name" class="form-control" placeholder="First, Last" ng-model="formData.name"><br/>
+					<p ng-show="contactForm.name.$invalid && !contactForm.name.$pristine" class="help-block">You name is required.</p><br/>
+
+					<label>Email Address</label><br/>
+					<input type="text" name="email" class="form-control" placeholder="Email Address" ng-model="formData.email"><br/>
+					<p ng-show="contactForm.email.$invalid && !contactForm.email.$pristine" class="help-block">Enter a valid email.</p><br/>
 				
-				<!-- Slide out Nav -->
-				<nav class="st-menu st-effect-3" id="menu-3">
-					<h2><img src="img/bsd_logo.png"></h2>
-					<ul>
-						<li><a href="#">About Me</a></li>
-						<li><a href="#">Assets</a></li>
-						<li><a href="#">Recent Works</a></li>
-						<li><a href="#">Blog <i>(Coming Soon)</i></a></li>
-						<li><a href="#">Resume</a></li>
-					</ul>
-				</nav>
-				
-				<!-- Content Wrapper -->
-				<div class="st-content">
-					<div class="st-content-inner"> <!-- extra div for emulating position:fixed of the menu -->
+				</div>
+				<div class="contactright">
 
-						<!-- Navigation Action  -->
-						<div id="st-trigger-effects" class="navbtn">
-							<section data-effect="st-effect-3">
-								<!-- to activate slider  -->
-								<span><p class="navtoggle"></p></span>
-							</section>
-						</div>
+					<label>Message</label><br/>
+					<textarea rows="6" cols="30" type="text" name="message" class="form-control" placeholder="Your message" ng-model="message"></textarea>
+					<p ng-show="contactForm.msg.$invalid && !contactForm.msg.$pristine" class="help-block">Message is required.</p><br/>
 
-						<!-- Header (Logo Animation) -->
-						<header class="headercontact">
-							<!-- Logo -->
-							<div id="logo_contact">
-								<img src="img/bsd_contact.png">
-							</div>
-						</header>
+				</div>
+				<div class="contactbtn">
+				<button type="submit" ng-disabled="userForm.$invalid">Send Message</button>
+			</div>
+			</form>
+			
 
-						<!-- Assets (Skills) -->
-						<div class="assets clearfix">	
-							<div class="columnhead">
-								<h2>Contact Me</h2>
-								<p>Hey there, want to get ahold of me? Send me a message below.</p>
-								<div class="contactform">
-									<form>
-										<div class="contactleft">
-											<label>Name</label><br/>
-											<input type="text" name="firstname"><br/>
-											<label>Email Address</label><br/>
-											<input type="text" name="lastname"><br/>
-										</div>
-										<div class="contactright">
-											<label>Message</label><br/>
-											<textarea rows="6" cols="30"></textarea>
-										</div>
-									</form>
-									<div class="contactbtn">
-										<button>Send Message</button>
-									</div>
-										
-								</div>
-
-							</div>
-
-							
-								
-						</div>	<!-- /main assets -->
-
-						<!-- Footer -->
-						<div class="main clearfix footer">
-							<div class="footerinner">
-								<p>&copy; 2014 Brock Stone Design, I made a change for midterm</p>
-							</div>
-						</div>
+			
+		</div>
+	</div>	
+</div>	<!-- /main assets -->
 
 						
-
-
-					</div><!-- /st-content-inner -->
-				</div><!-- /st-content -->
-			</div><!-- /st-pusher -->
-		</div><!-- /st-container -->
-
-		<!-- 
-		||||||||||||||||||||||||||||||||||
-			Mon Javascript Fantastique! 
-		||||||||||||||||||||||||||||||||||
-		-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-		<script src="js/bsd.js"></script>
-	</body>
-</html>

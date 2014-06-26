@@ -366,6 +366,7 @@ nav h2{
 	width: 300px;
 	margin-bottom: 35px;
 	margin-top: 15px;
+	color: #494949;
 
 }
 .contactform label{
@@ -375,6 +376,7 @@ nav h2{
 textarea{
 	margin-top: 15px;
 	margin-bottom: 70px;
+	color: #494949;
 }
 .contactbtn{
 	margin-left: 50px;

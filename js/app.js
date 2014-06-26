@@ -10,10 +10,10 @@ var bsd = angular.module('brock', [
 				templateUrl: 'views/main.html',
 				controller: 'galCtrl'
 			})
-			// Gallery View  
-			.when('/gallery', {
-				templateUrl: 'views/gallery.html'
-				// controller: 'CtrlUser'
+			// Contact View  
+			.when('/contact', {
+				templateUrl: 'views/contact.html',
+				controller: 'contactCtrl'
 			})
 			.otherwise({
 				redirectTo: '/'
