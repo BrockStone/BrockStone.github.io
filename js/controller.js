@@ -33,14 +33,32 @@ bsd.controller('galCtrl', ['$scope',
 }]);
 
 // create angular controller
-bsd.controller('contactCtrl', function($scope) {
+bsd.controller('contactCtrl', function($scope, $http) {
 
 	// function to submit the form after all validation has occurred			
 	$scope.submitForm = function(isValid) {
-
+		//$scope.formData
 		// check to make sure the form is completely valid
 		if (isValid) {
-			alert('our form is amazing');
+			//alert('our form is amazing');
+			var params = "name=" + $scope.formData.name + "&email=" + $scope.formData.email + "&msg=" +$scope.formData.msg;
+			
+			$http({
+		        method  : 'POST',
+		        url     : 'contact_process.php',
+		        data  	: params,//$scope.formData  // pass in data as strings
+		        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+		    }).success(function(data, status, headers, config){
+				console.log("success", data);	
+				$scope.success = "Recieved your message! Will Be in touch Shortly";
+				$scope.formData.name = " ";
+				$scope.formData.email = " ";
+				$scope.formData.msg = " ";
+		    }).error(function(data, status, headers, config){
+		    	console.log("error", data);	
+		    })
+		    
+	        
 		}
 
 	};
