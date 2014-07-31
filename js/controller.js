@@ -31,7 +31,7 @@ bsd.controller('galCtrl', ['$scope',
 			}
 		]
 	}	
-}]);
+]);
 
 // create angular controller
 bsd.controller('contactCtrl', function($scope, $http) {
