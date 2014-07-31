@@ -30,6 +30,7 @@ bsd.controller('galCtrl', ['$scope',
 			desc: "Pure JS MVC Framwork for a 'Tidy' task manager application."
 			}
 		]
+	}	
 }]);
 
 // create angular controller
