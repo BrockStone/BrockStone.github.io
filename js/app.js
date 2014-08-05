@@ -15,6 +15,9 @@ var bsd = angular.module('brock', [
 				templateUrl: 'views/contact.html',
 				controller: 'contactCtrl'
 			})
+			.when('/gallery', {
+				templateUrl: 'views/gallery.html'
+			})
 			.otherwise({
 				redirectTo: '/'
 			});

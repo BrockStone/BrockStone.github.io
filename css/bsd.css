@@ -3,7 +3,7 @@
 ---------------- FONTS
 ----------------------
 */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 /*
 ----------------------
 --------------  GLOBAL
@@ -26,7 +26,12 @@ a:hover, a:focus {
 	color: #2c774b;
 	outline: none;
 }
-
+h2{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1.8em;
+	font-weight: 100;
+	padding: 10px;
+}
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
@@ -156,6 +161,22 @@ button:hover {
 	background-color: #31A5C8; 
 
 }
+.header2 {
+	margin: 0 auto;
+	padding: 3em;
+	
+	height: 30vh; /*vh (viewport height)*/
+	background-color: #31A5C8; 
+
+}
+
+.header2 h2{
+	color: #ffffff;
+	font-size: 4em;
+	font-family: 'Lato', sans-serif; 
+	margin-left: 25px;
+
+}
 .headercontact{
 	margin: 0 auto;
 	padding: 3em;
@@ -214,6 +235,9 @@ nav h2{
 	height: 615px;
 	background-color: #ffffff;
 }
+.assets p{
+	color: #232323;
+}
 .fourth{
 	float: left;
 	width: 25%;
@@ -250,19 +274,30 @@ nav h2{
 */
 .about{
 	height: 425px;
-	background-color: #F4F4F4;   /*31A5C8 BLUE*/
+	background-color: #363636;   /*31A5C8 BLUE*/
 	/*background: url(../img/bsd_shadow.jpg);*/
-	color: #232323;
+	color: #ffffff;
 }
+.about h2, p{
+	color: #ffffff;
+}
+
 .aboutinner{
-	width: 960px;
-	margin: 0 auto;
+	width: 80%;
 	font-size: 1em;
- 
+	text-align: center;
+	margin: 0 auto; 
 }
-.about_left{
-	float: left;
-	width: 560px;
+.resume{
+	text-align: center;
+}
+.about_info{
+	width: 60%;
+	color: #ffffff;
+}
+.about_btn{
+	margin-top: 50px;
+	margin-right: 20px;
 }
 .about_right{
 	padding-left: 25px;
@@ -289,7 +324,12 @@ nav h2{
 	width: 25%;
 	height: 400px;
 }
+.half p{
+	
+	color: #323232;
+}
 .details{
+	color: #323232;
 	padding: 25px;
 	transition: all .3s ease-in-out;
 	height: 220px;
@@ -330,6 +370,9 @@ nav h2{
 */
 .contact{
 	background-color: #F4F4F4;
+}
+.contact p{
+	color: #323232;
 }
 .contactinner{
 	max-width: 960px;
@@ -387,6 +430,26 @@ textarea{
 
 }
 
+.gallery{
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.gal p{
+	background-color: #ffffff;
+	color: #323232;
+	margin-bottom: 55px;
+
+}
+.gallery h2{
+	font-size: 2em;
+	font-weight: 300;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+
+
+
 
 
 /*
@@ -405,6 +468,8 @@ textarea{
    -webkit-box-shadow: inset 0 0 2px #000000;
    box-shadow:         inset 0 0 1px #000000;
 }
+
+
 
 /*
 ----------------------
@@ -489,4 +554,8 @@ textarea{
 	
 
 
+}
+hr{
+	border-style: 1px solid #323232;
+	margin: 0px;
 }

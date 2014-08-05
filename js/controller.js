@@ -7,25 +7,25 @@ bsd.controller('galCtrl', ['$scope',
 		[
 			{
 			img: "drop",
-			url: "github.com",	
+			url: "https://github.com/BrockStone/drop",	
 			title: "Drop",
 			desc: "Drop is an application im building for final Project for school. It will allow snowboarding to enter the social media network."
 			},
 			{
 			img: "wcf",
-			url: "github.com",	
+			url: "https://github.com/BrockStone/Westmoreland_Contract_Furniture",	
 			title: "Westmoreland Contract Furniture",
 			desc: "Westmoreland Contract Furniture's Custom Mobile Friendly Porfolio."
 			},
 			{
 			img: "guru",
-			url: "github.com",	
+			url: "https://github.com/BrockStone/Guru_eLearning",	
 			title: "Guru e-Learning",
 			desc: "A Ficticious site created for educational purposes. Used a JS library interacting with an Actionscript library to create a custom flash player."
 			},
 			{
 			img: "tidy",
-			url: "github.com",	
+			url: "https://github.com/BrockStone/Tidy",	
 			title: "Tidy",
 			desc: "Pure JS MVC Framwork for a 'Tidy' task manager application."
 			}

@@ -21,9 +21,11 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/bsd.css" />
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js'></script>
     	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js'></script>
     	<script src="js/modernizr.custom.js"></script>
+
 		
 	</head>
 	<body ng-controller="contactCtrl">
@@ -34,11 +36,10 @@
 				<nav class="st-menu st-effect-3" id="menu-3">
 					<h2><img src="img/bsd_logo.png"></h2>
 					<ul>
-						<li><a href="#">About Me</a></li>
-						<li><a href="#">Assets</a></li>
-						<li><a href="#">Recent Works</a></li>
-						<li><a href="#">Blog <i>(Coming Soon)</i></a></li>
-						<li><a href="#">Resume</a></li>
+						<li><a href="#/">Home</a></li>
+						<li><a href="#/gallery">Gallery</a></li>
+						<li><a href="#/contact">Contact</a></li>
+						<li><a href="Brock_Stone_Resume.pdf">Resume</a></li>
 					</ul>
 				</nav>
 				
@@ -55,7 +56,7 @@
 						</div>
 
 					    <!-- Angular View to load main content -->
-						<div ng-view>
+						<div ng-view autoscroll="false">
 							
 						</div>
 
