@@ -37,7 +37,7 @@ bsd.controller('galCtrl', ['$scope',
 	}	
 ]);
 
-]);
+
 
 
 // create angular controller
