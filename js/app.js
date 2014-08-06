@@ -7,7 +7,7 @@ var bsd = angular.module('brock', [
 		$routeProvider
 			//Main View 
 			.when('/', {
-				templateUrl: 'views/main.html',
+				templateUrl: 'views/contstruction.html',
 				controller: 'galCtrl'
 			})
 			// Contact View  
