@@ -7,6 +7,7 @@
   $msg = $_POST['msg'];
   var_dump($_POST);
   
+
   //send email
   mail($admin_email, $name, "This is a Contact Message from Brock Stone Design: ".$msg, "From:" . $email);
 

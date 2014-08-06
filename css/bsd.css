@@ -161,6 +161,7 @@ button:hover {
 	background-color: #31A5C8; 
 
 }
+<<<<<<< HEAD
 .header2 {
 	margin: 0 auto;
 	padding: 3em;
@@ -177,6 +178,8 @@ button:hover {
 	margin-left: 25px;
 
 }
+=======
+>>>>>>> d367ebf4a9787e15949f66cb38622ebe6ac1422c
 .headercontact{
 	margin: 0 auto;
 	padding: 3em;
@@ -430,6 +433,7 @@ textarea{
 
 }
 
+<<<<<<< HEAD
 .gallery{
 	text-align: center;
 	background-color: #ffffff;
@@ -446,9 +450,6 @@ textarea{
 	font-weight: 300;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
-
-
-
 
 
 
