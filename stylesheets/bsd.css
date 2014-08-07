@@ -1,8 +1,11 @@
+/*///////////////////////
+///////   HEADER
+//////////////////////*/
 #header{
 	height: 100vh;
 	color: #ffffff;
 	width: 100vw;
-	/*background-color: #1DB7FF;*/
+	background-color: #1DB7FF;
 }
 #header img{
 	float: left;
@@ -26,7 +29,6 @@
 	height: 70vh;
 	color: #ffffff;
 	width: 100vw;
-	background-color: #1DB7FF;
 	text-align: center;
 
 }
@@ -34,9 +36,21 @@
 	height: 30vh;
 	color: #ffffff;
 	width: 100vw;
-	background-color: #1DB7FF;
 
 }
+#gal_top{
+	height: 30vh;
+	background-color: #1DB7FF;
+}
+#gal_top h1{
+	font-size: 5em;
+	color:  #323232;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	padding: 80px;
+	float: left;
+}
+
 #title{
 	text-align: center;
 	margin-bottom: 50px;
@@ -50,22 +64,10 @@
 #title p{
 	font-size: 1.2em;
 }
+/*///////////////////////
+///////   SKILLS
+//////////////////////*/
 
-
-#work{
-	text-align: center;
-	list-style-type: none;
-	font-size: 1.2em;
-	margin-bottom: 70px;
-}
-
-#work h4{
-	font-size: 1.2em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	margin-bottom: 25px;
-	color: #3A3A3A;
-}
 .btn-outline {
 	text-decoration: none;
     font-size: .8em;
@@ -98,14 +100,38 @@
 .btn-outline2:focus,
 .btn-outline2:active,
 .btn-outline2.active {
-    color: #3A3A3A;
-    background: rgba(255,255,255,0.9);
+    color: #ffffff;
+    background: #3A3A3A;
 }
 
-#skills{
+/*///////////////////////
+///////   PROJECTS
+//////////////////////*/
 
+#work{
+	text-align: center;
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-bottom: 70px;
 }
 
+#work h4{
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: #3A3A3A;
+}
+#projects{
+	background-color: #ECECEC;
+	text-align: center;
+}
+#projects p{
+	margin-bottom: 65px;
+}
+/*///////////////////////
+///////   ABOUT
+//////////////////////*/
 #about p{
 	font-size: 1.3em;
 	line-height: 25px;
@@ -121,10 +147,24 @@
 	margin-bottom: 40px;
 }
 
-#projects{
-	background-color: #ECECEC;
-	text-align: center;
+.right{
+	float: right;
 }
-#projects p{
-	margin-bottom: 65px;
+#con_btns{
+	margin-bottom: 45px;
+}
+
+#footer{
+	background-color: #323232;
+	height: 20vh;
+	margin: 0px;
+	color: #ffffff;
+	text-align: center;
+	border-bottom: 8px solid #1DB7FF;
+}
+#footer p{
+	margin-top: 20px;
+}
+#gallery img{
+	margin-bottom: 50px;
 }
