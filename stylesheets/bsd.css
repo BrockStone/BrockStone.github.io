@@ -11,14 +11,24 @@
 .site-content{
 	flex: 1;
 }
+h4{
+	color:#0DCEB7;
+}
+p{
+	color: #6D6D6D;
+}
+span{
+	font-weight: 700;
+}
 #cont{
 	text-align: center;
 	margin-top: 30vh;
 }
 footer{
 	font-size: .9em;
+	font-weight: 400;
 	height: 40px;
 	padding: 10px;
 	background-color: #3D3D3D;
-	color: #8C8C8C;
+	color: #828282;
 }
