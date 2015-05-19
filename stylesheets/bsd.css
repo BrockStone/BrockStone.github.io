@@ -1,170 +1,24 @@
-/*///////////////////////
-///////   HEADER
-//////////////////////*/
-#header{
-	height: 100vh;
-	color: #ffffff;
-	width: 100vw;
-	background-color: #1DB7FF;
+*{
+	font: 400 1em/1.4 'Open Sans',sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.4;
 }
-#header img{
-	float: left;
-	padding: 35px;
-	
+.site{
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
-#header ul{
-	float: right;
-	padding: 50px;
+.site-content{
+	flex: 1;
 }
-#header ul li{
-	float: left;
-	font-size: 1.3em;
-	font-family: 'Actor', sans-serif;
-}
-#header ul li a{
-	text-decoration: none;
-	color: #3A3A3A;
-}
-.header_btm{
-	height: 70vh;
-	color: #ffffff;
-	width: 100vw;
+#cont{
 	text-align: center;
-
+	margin-top: 30vh;
 }
-.header_top{
-	height: 30vh;
-	color: #ffffff;
-	width: 100vw;
-
-}
-#gal_top{
-	height: 30vh;
-	background-color: #1DB7FF;
-}
-#gal_top h1{
-	font-size: 5em;
-	color:  #323232;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	padding: 80px;
-	float: left;
-}
-
-#title{
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-#title h1{
-	font-size: 2.5em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-}
-#title p{
-	font-size: 1.2em;
-}
-/*///////////////////////
-///////   SKILLS
-//////////////////////*/
-
-.btn-outline {
-	text-decoration: none;
-    font-size: .8em;
-    color: #3A3A3A;
-    
-    transition: all .3s ease-in-out;
-    padding: 8px 18px;
-    margin-left: 8px;
-}
-.btn-outline:active,
-.btn-outline.active {
-	border: 1px solid #ffffff;
-}
-
-.btn-outline:hover,
-.btn-outline:focus{
-    color: #3A3A3A;
-    background: rgba(255,255,255,0.5);
-}
-.btn-outline2 {
-	text-decoration: none;
-    font-size: 1.2em;
-    color: #3A3A3A;
-    border: 1px solid #3A3A3A;
-    transition: all .3s ease-in-out;
-    padding: 10px 23px;
-}
-
-.btn-outline2:hover,
-.btn-outline2:focus,
-.btn-outline2:active,
-.btn-outline2.active {
-    color: #ffffff;
-    background: #3A3A3A;
-}
-
-/*///////////////////////
-///////   PROJECTS
-//////////////////////*/
-
-#work{
-	text-align: center;
-	list-style-type: none;
-	font-size: 1.2em;
-	margin-bottom: 70px;
-}
-
-#work h4{
-	font-size: 1.2em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	margin-bottom: 25px;
-	color: #3A3A3A;
-}
-#projects{
-	background-color: #ECECEC;
-	text-align: center;
-}
-#projects p{
-	margin-bottom: 65px;
-}
-/*///////////////////////
-///////   ABOUT
-//////////////////////*/
-#about p{
-	font-size: 1.3em;
-	line-height: 25px;
-	padding-left: 40px;
-	padding-right: 4px;
-	
-
-}
-#about{
-	background-color: #ECECEC;
-}
-#about h1{
-	margin-bottom: 40px;
-}
-
-.right{
-	float: right;
-}
-#con_btns{
-	margin-bottom: 45px;
-}
-
-#footer{
-	background-color: #323232;
-	height: 20vh;
-	margin: 0px;
-	color: #ffffff;
-	text-align: center;
-	border-bottom: 8px solid #1DB7FF;
-}
-#footer p{
-	margin-top: 20px;
-}
-#gallery img{
-	margin-bottom: 50px;
+footer{
+	font-size: .9em;
+	height: 40px;
+	padding: 10px;
+	background-color: #3D3D3D;
+	color: #8C8C8C;
 }

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="brock"> <!-- Angular Init -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Brock Stone Design</title>
+		<!-- 
+			____                  __   _____ __                   ____            _           
+		   / __ )_________  _____/ /__/ ___// /_____  ____  ___  / __ \___  _____(_)____ ____
+		  / __  / ___/ __ \/ ___/ //_/\__ \/ __/ __ \/ __ \/ _ \/ / / / _ \/ ___/ / __  / __ \
+		 / /_/ / /  / /_/ / /__/  <  ___/ / /_/ /_/ / / / /  __/ /_/ /  __(__  ) / /_/ / / / /
+		/_____/_/   \____/\___/_/|_|/____/\__/\____/_/ /_/\___/_____/\___/____/_/\__  /_/ /_/ 
+		                                                                        /____/   
+		-->    
+		<meta name="description" content="Brock Stone Web Design and Developer Portfolio Site" />
+		<meta name="keywords" content="UI/UX Design, Front End Development, HTML5, CSS3, Smooth, Sexy Web Design" />
+		<meta name="Author" content="Brock Stone" />
+		<link rel="shortcut icon" href="img/bsd_fav.ico" type="image/x-icon">
+		<link rel="icon" href="img/bsd_fav.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/bsd.css" />
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js'></script>
+    	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js'></script>
+    	<script src="js/modernizr.custom.js"></script>
+		
+	</head>
+	<body ng-controller="contactCtrl">
+		<div id="st-container" class="st-container"> <!-- Content push wrapper -->
+			<div class="st-pusher"> <!-- Menus under push wrapper -->
+				
+				<!-- Slide out Nav -->
+				<nav class="st-menu st-effect-3" id="menu-3">
+					<h2><img src="img/bsd_logo.png"></h2>
+					<ul>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Assets</a></li>
+						<li><a href="#">Recent Works</a></li>
+						<li><a href="#">Blog <i>(Coming Soon)</i></a></li>
+						<li><a href="#">Resume</a></li>
+					</ul>
+				</nav>
+				
+				<!-- Content Wrapper -->
+				<div class="st-content">
+					<div class="st-content-inner"> <!-- extra div for emulating position:fixed of the menu -->
+
+						<!-- Navigation Action  -->
+						<div id="st-trigger-effects" class="navbtn">
+							<section data-effect="st-effect-3">
+								<!-- to activate slider  -->
+								<span><p class="navtoggle"></p></span>
+							</section>
+						</div>
+
+					    <!-- Angular View to load main content -->
+						<div ng-view>
+							
+						</div>
+						<!-- Header (Logo Animation) -->
+						<header class="header">
+							<!-- Logo -->
+							<div id="logo">
+								<img src="img/bsd_2.png">
+								<p>BOOOBS!</p>
+							</div>
+						</header>
+
+						<!-- Assets (Skills) -->
+						<div class="main clearfix assets">	
+							<div class="columnhead">
+								<h2>Assets</h2>
+								<p>Current Web Design &amp; Development Skills</p>
+							</div>
+							<div class="column">
+								<div class="skills">
+									<!-- UI/UX Design -->
+									<div class="fourth brd_right">
+										<img src="img/uiux.png">
+										<h4>UI / UX Design</h4>
+										<li><p>User Interface Design</p></li>
+										<li><p>User Interaction Design</p></li>
+										<li><p>Prototyping</p></li>
+										<li><p>Wireframing</p></li>
+										<li><p>Adobe Creative Suite</p></li>
+									</div>
+									<!-- Front End -->
+									<div class="fourth brd_right">
+										<img src="img/front.png">
+										<h4>Front-End Development</h4>
+										<li><p>HTML5</p></li>
+										<li><p>CSS3</p></li>
+										<li><p>Responsive Design</p></li>
+										<li><p>JQuery</p></li>
+										<li><p>Angular JS</p></li>
+										<li><p>other Javascript Libraries</p></li>
+									</div>
+									<!-- Back End -->
+									<div class="fourth brd_right">
+										<img src="img/db.png">
+										<h4>Back-End Development</h4>
+										<li><p>PHP</p></li>
+										<li><p>Python</p></li>
+										<li><p>Mongo DB</p></li>
+										<li><p>MySQL</p></li>
+										<li><p>MVC Architecture</p></li>
+									</div>
+									<!-- Team Assets -->
+									<div class="fourth">
+										<img src="img/assets.png">
+										<h4>Team Assets</h4>
+										<li><p>GIT</p></li>
+										<li><p>Quick Learner</p></li>
+										<li><p>Team Player</p></li>
+										<li><p>Detail Oriented</p></li>
+										<li><p>Initiator</p></li>
+									</div>
+								</div> <!-- /skills -->	
+							</div> <!-- /column -->
+						</div>	<!-- /main assets -->
+
+						<!-- About -->
+						<div class="main clearfix about">
+							<div class="columnhead">
+								<h2>About Me</h2>
+								<p>Get to know me a little..</p>
+							</div>
+							
+							<div class="column">
+								<div class="aboutinner">
+									<div class="about_left">
+										<p>Hi, My name is Brock Stone I am a UI/UX designer and frontend/backend developer from Pittsburgh, Pa. I create sexy, engaging user experiences for the web. I enjoy keeping up to date with the latest programming technologies &amp; trends to integrate with my own projects. When I am not building in pixels I enjoy making videos with my GoPro, Snowboarding, Biking, Cooking, Reading, Pretending to be a Photogrpher, Drawing, Adventuring with my husky Denali and getting my hands dirty with anything mechanical. View some of my work below.</p>
+									</div>
+									<div class="about_right">
+										<h5>Check out my Resume and some of my work.</h5>
+										<p><a class="btn-outline-sm2" href="Brock_Stone_Resume.pdf">View Resume</a></p>
+										<p><a class="btn-outline-sm2" href="#">View  Git Hub</a></p>
+							
+									</div>
+								</div>
+							</div> <!-- column -->
+						</div> <!-- /main about -->
+
+						<!-- Projects -->
+						<div class="main clearfix work">
+							<div class="columnhead">
+								<h2>Recent Projects</h2>
+								<p>Collection of recent projects ive been working on</p>
+							</div>	
+							<div class="column">
+								<div class="workinner">
+									<div class="half">
+										<a href="#"><img src="img/drop.png"></a>
+										<div class="details">
+											<h3>Drop</h3>
+											<p>Drop is an application im building for final Project for school. It will allow snowboarding to enter the social media network.</p>
+										</div>
+									</div> 
+									<div class="half">
+										<a href="#"><img src="img/wcf.png"></a>
+										<div class="details">
+											<h3>Westmoreland Contract Furniture</h3>
+											<p>Web Design &amp; Development for a local Commercial Contract Furniture Comapany.</p>
+										</div>
+										
+									</div> 
+									<div class="half">
+										<a href="#"><img src="img/guru.png"></a>
+										<div class="details">
+											<h3>Guru e-Learning</h3>
+											<p>A Ficticious site created for educational purposes. Used a JS library interacting with an Actionscript library to create a custom flash player. </p>
+										</div>
+									</div> 
+									<div class="half">
+										<a href="#"><img src="img/tidy.png"></a>
+										<div class="details">
+											<h3>Tidy</h3>
+											<p>Pure JS MVC Framwork for a "Tidy" task manager application.</p>
+										</div>
+									</div> 
+									
+								</div> <!-- /work inner -->
+								<div class="gallery-link">
+									<p><a class="btn-outline-sm" href="#">View My Gallery</a></p>
+								</div>
+							</div>  <!-- /column -->
+						</div>	<!-- /main work -->
+
+						<!-- Contact -->
+						<div class="main clearfix contact">
+							<div class="columnhead">
+								<h2>Contact Me</h2>
+								<p>Hello there, heres how you can get in touch with me</p>
+							</div>	
+							<div class="column">
+								<div class="contactinner">
+									<div class="email">
+										<a class="btn-outline" href="#">Send Me an Email</a>
+										<a class="btn-outline" href="#">Download Resume</a>
+									</div>
+									<div class="social">
+										<a href="#"><img src="img/github.png"></a>
+										<a href="#"><img src="img/linkedin.png"></a>
+										<a href="#"><img src="img/insta.png"></a>
+										
+									</div>
+								</div>
+							</div>  <!-- column -->
+						</div>	<!-- /main contact -->
+
+						<!-- Footer -->
+						<div class="main clearfix footer">
+							<div class="footerinner">
+								<p>&copy; 2014 Brock Stone Design, I made a change for midterm</p>
+							</div>
+						</div>
+
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+
+		<!-- 
+		||||||||||||||||||||||||||||||||||
+			Mon Javascript Fantastique! 
+		||||||||||||||||||||||||||||||||||
+		-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controller.js"></script>
+
+
+
+		<!--  // <script src="js/bsd.js"></script> -->
+	</body>
+</html>
