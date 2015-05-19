@@ -32,3 +32,15 @@ footer{
 	background-color: #3D3D3D;
 	color: #828282;
 }
+#dream{
+	padding-top: 100px;
+	display: block;
+	margin: 0 auto;
+
+}
+#slogan{
+	text-align: center;
+}
+h6{
+	font-size: 1.5em;
+}
