@@ -1,28 +1,40 @@
- var bsdApp = angular.module('bsdApp', ['ngRoute']);
+var bsdApp = angular.module('bsdApp', ['ngRoute']);
 
-    // configure our routes
-    bsdApp.config(function($routeProvider) {
-        $routeProvider
+// configure our routes
+bsdApp.config(function($routeProvider) {
+    $routeProvider
 
-            // Home-page Route
-            .when('/', {
-                templateUrl : 'views/construction.html',
-                controller  : 'mainController'
-            })
+        // Home-page Route
+        .when('/', {
+            templateUrl : 'views/construction.html',
+            controller  : 'mainCtrl'
+        })
 
-            // Dream-Collective Route
-            .when('/dream-collective', {
-                templateUrl : 'views/dream-collective.html',
-                controller  : 'dreamController'
-            })
-    });
+        // Dream-Collective Route
+        .when('/dream-collective', {
+            templateUrl : 'views/dream-collective.html',
+            controller  : 'dreamCtrl'
+        })
+});
 
-    // create the controller and inject Angular's $scope
-    bsdApp.controller('mainController', function($scope) {
-        // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
-    });
+// Factory to Dynamically set the page title
+bsdApp.factory('Page', function(){
+    
+    return {
+        title: function() { return title; },
+        setTitle: function(newTitle) { title = newTitle; }
+    };
+}); 
 
-    bsdApp.controller('dreamController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
-    });
+// create the controller and inject Angular's $scope
+bsdApp.controller('mainCtrl', function($scope, Page) {
+   
+    // Set title to:    
+    Page.setTitle('BSD | Home');
+});
+
+bsdApp.controller('dreamCtrl', function($scope, Page) {
+    
+    // Set title to:    
+    Page.setTitle('Dream-Collective');
+});

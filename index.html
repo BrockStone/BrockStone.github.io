@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bsdApp"> <!-- Angular Init -->
+<html lang="en" ng-app="bsdApp" ng-controller="mainCtrl"> <!-- Angular Init -->
 	<head>
 		<!-- Basic Site Info   -->
 		<meta charset="UTF-8" />
@@ -10,7 +10,7 @@
 		<meta name="Author" content="Brock Stone" />
 		
 		<!-- Title -->
-		<title>Brock Stone Design</title>
+		<title>{{Page.title()}}</title>
 
 		<!-- Favicon / shortcut icon-->
 		<link rel="icon" href="images/bsd_fav.ico" type="image/x-icon">
@@ -23,7 +23,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 		<!-- Styling -->
-		<link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/layout.css" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/bsd.css" />
 
@@ -32,12 +31,14 @@
     	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js'></script>
 		
 	</head>
-	<body class="site" ng-controller="mainController">
+	<body class="site">
 	
 		<!-- Angular Templating -->
         <div ng-view class="site-content">
         	<!-- This is where my content will be injected -->
         </div>
+
+
 
 		<footer>
 			<div class="container">
