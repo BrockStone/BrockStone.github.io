@@ -58,3 +58,57 @@ z-index: -100;
 transform: translateX(-50%) translateY(-50%);
 background-size: cover;
 }
+
+.dream-logo{
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	font-size: 2.6em;
+}
+
+/*Paralax Image*/
+.parallax-image {
+    height: 550px;
+    background-size: cover;
+    width: 100%;
+}
+
+/*content sections*/
+.content {
+    height: 500px;
+}
+
+/*Images For parallaxing*/
+
+.main-bg {
+    background:url("../images/down-hill-sm.jpg") no-repeat fixed;
+}
+.hand-crafted{
+	background:url("../images/handcrafted.jpg") no-repeat fixed;
+}
+#main-header{
+	padding-top: 50px;
+}
+#mission{
+	text-align: center;
+}
+.title{
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	padding: 50px;
+}
+.white-title{
+	font-family: "museo-sans", sans-serif;
+	font-weight: 900;
+	padding: 50px;
+	color: #fff;
+}
+.quote{
+	font-family: "museo-sans", sans-serif;
+	font-weight: 100;
+	font-size: 2.5em;
+}
+#our-quote{
+	width: 100%;
+	padding: 100px;
+	text-align: center;
+}
