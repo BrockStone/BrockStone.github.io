@@ -74,7 +74,7 @@ background-size: cover;
 
 /*content sections*/
 .content {
-   
+    padding: 50px 0px;
 }
 
 /*Images For parallaxing*/
@@ -90,7 +90,6 @@ background-size: cover;
 }
 #mission{
 	padding: 0px 0px 100px 0px; 
-	text-align: center;
 }
 .title{
 	font-family: "museo-sans", sans-serif;
@@ -104,11 +103,11 @@ background-size: cover;
 }
 .quote{
 	font-family: "museo-sans", sans-serif;
-	font-weight: 100;
-	font-size: 2.5em;
-	padding: 100px 0px;
+	font-weight: 900;
+	font-size: 3.5em;
 }
 #our-quote{
 	width: 100%;
 	text-align: center;
+	padding: 75px 0px;
 }
