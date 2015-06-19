@@ -72,10 +72,7 @@ background-size: cover;
     width: 100%;
 }
 
-/*content sections*/
-.content {
-    padding: 50px 0px;
-}
+
 
 /*Images For parallaxing*/
 
@@ -84,12 +81,16 @@ background-size: cover;
 }
 .hand-crafted{
 	background:url("../images/handcrafted.jpg") no-repeat fixed;
+	color: #fff;
 }
 #main-header{
 	padding-top: 50px;
 }
 #mission{
 	padding: 0px 0px 100px 0px; 
+	p{
+		color: red;
+	}
 }
 .title{
 	font-family: "museo-sans", sans-serif;
@@ -98,7 +99,7 @@ background-size: cover;
 .white-title{
 	font-family: "museo-sans", sans-serif;
 	font-weight: 900;
-	padding: 50px;
+	padding: 50px 0px;
 	color: #fff;
 }
 .quote{
