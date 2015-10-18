@@ -6,7 +6,7 @@ bsdApp.config(function($routeProvider) {
 
         // Home-page Route
         .when('/', {
-            templateUrl : 'views/construction.html',
+            templateUrl : 'views/welcome.html',
             controller  : 'mainCtrl'
         })
 
