@@ -231,7 +231,7 @@ silver - a1a9b0;
     color: rgba(161, 169, 176, 1);
     font-size: 40px;
     letter-spacing: 12px;
-    margin: 110px 0px 0px 0px;
+    margin-top: 20vh;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -239,7 +239,7 @@ silver - a1a9b0;
 .bsd-welcome p {
     color: rgba(161, 169, 176, 0.5);
     letter-spacing: 1px;
-    margin: 10px 0px 100px 0px;
+    margin-bottom: 20vh;
     font-size: 20px;
 }
 
