@@ -46,7 +46,7 @@ Typography
 /* * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
  
-h1 { font-size: 2em; margin: 0.67em 0; color: #353535; }
+h1 { font-size: 2em; margin: 0.67em 0; }
 h2 { font-size: 1.5em; margin: 0.83em 0; }
 h3 { font-size: 1.17em; margin: 1em 0; }
 h4 { font-size: 1em; margin: 1.33em 0; }
@@ -180,13 +180,123 @@ Global Styles
 }
 
 
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+
+.flickr {
+   color: transparent;
+   text-shadow: white 0 0 1px;
+
+   -webkit-transition: text-shadow 0.2s ease-in-out;
+   -moz-transition:    text-shadow 0.2s ease-in-out;
+   transition:         text-shadow 0.2s ease-in-out;
+}
+
+
+.gold-btn-outline{
+	color: #a89b7b;
+	padding: 20px 45px;
+	border: 1px solid #a89b7b;
+
+}
+.gold-btn-outline:hover{
+	color: #a89b7b;
+	text-decoration: none;
+	background-color: rgba(255,255,255,.03);
+}
+
+
 /* =========================================
 Welcome CTA
 ========================================= */
+/*gold - color: #a89b7b; 
+silver - a1a9b0;
+*/
+#bsd-welcome-logo {
+    margin-bottom: 25px;
+}
 
-.bsd-welcome {color: #a89b7b; min-height: 100vh; background-color: #1f2324; /*background-image: url(../images/down-hill.jpg)*/;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.bsd-welcome h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
-.bsd-welcome h1 span { color: #a1a9b0; display: inline-block; }
-.bsd-welcome p { letter-spacing: 1px; }
+.bsd-welcome {
+    min-height: 100vh;
+    background-color: #1f2324;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 65px;
+    height: auto;
+}
+
+.bsd-welcome h1 {
+    color: rgba(161, 169, 176, 1);
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin: 110px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.bsd-welcome p {
+    color: rgba(161, 169, 176, 0.5);
+    letter-spacing: 1px;
+    margin: 10px 0px 100px 0px;
+    font-size: 20px;
+}
+
+nav {
+    border-top: 1px solid rgba(204, 216, 219, .07);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    padding-left: 0;
+    position: relative;
+}
+
+nav ul li a {
+    padding: 10px 20px 0px 0px;
+    color: #a1a9b0;
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-top: 1px solid #a89b7b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
