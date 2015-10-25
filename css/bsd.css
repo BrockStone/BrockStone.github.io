@@ -62,7 +62,7 @@ dfn { font-style: italic; }
 /* * Addresses styling not present in IE 6/7/8/9. */
 mark { background: #ff0; color: #000; }
 /* * Addresses margins set differently in IE 6/7. */
-p, pre { margin: 1em 0; }
+p, pre { margin: 0; }
 /* * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
 code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 /* * Improves readability of pre-formatted text in all browsers. */
@@ -179,19 +179,12 @@ Global Styles
 	line-height: 1.4;
 }
 
+/* --------- Animation Delays -------------- */
 
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
-.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
-
-.flickr {
-   color: transparent;
-   text-shadow: white 0 0 1px;
-
-   -webkit-transition: text-shadow 0.2s ease-in-out;
-   -moz-transition:    text-shadow 0.2s ease-in-out;
-   transition:         text-shadow 0.2s ease-in-out;
-}
-
+.delay-1s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
+.delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
+.delay-3s { animation-delay: 3s; -webkit-animation-delay: 3s; }
 
 .gold-btn-outline{
 	color: #a89b7b;
@@ -216,6 +209,11 @@ silver - a1a9b0;
     margin-bottom: 25px;
 }
 
+.bsd-header{
+    border-bottom: 1px solid rgba(204, 216, 219, .07);
+    position: relative;
+}
+
 .bsd-welcome {
     min-height: 100vh;
     background-color: #1f2324;
@@ -223,7 +221,7 @@ silver - a1a9b0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 65px;
+    padding: 50px;
     height: auto;
 }
 
@@ -236,20 +234,29 @@ silver - a1a9b0;
     text-transform: uppercase;
 }
 
-.bsd-welcome p {
-    color: rgba(161, 169, 176, 0.5);
-    letter-spacing: 1px;
+#bsd-skills {
+    color: #a89b7b;
+    letter-spacing: 3px;
     margin-bottom: 20vh;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
+#bsd-skills span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+
 nav {
-    border-top: 1px solid rgba(204, 216, 219, .07);
+   
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 14px;
 }
 
 nav ul li {
@@ -259,25 +266,44 @@ nav ul li {
     -moz-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    padding-left: 0;
     position: relative;
+    margin-right:20px;
+    width: 120px;
+}
+
+nav ul li:last-child {
+    margin-right: 0px;
 }
 
 nav ul li a {
-    padding: 10px 20px 0px 0px;
     color: #a1a9b0;
-    padding-left: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    padding-bottom: 15px;
+    letter-spacing: 5px;
+
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
-    border-top: 1px solid #a89b7b;
+    border-bottom: 1px solid #a89b7b;
+}
+#recnet-works-btn{
+    font-size: 1.2em;
+    color: #a89b7b;
+}
+#recnet-works-btn:hover{
+    text-decoration: none;
 }
 
+/*Behind the Design*/
+
+#behind-the-design{
+    background-color: #1f2324;
+    height: 100vh;
+}
 
 
 
