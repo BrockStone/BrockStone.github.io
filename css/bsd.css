@@ -262,7 +262,7 @@ nav ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    margin-bottom: 14px;
+    line-height: 120px;
 }
 
 nav ul li {
@@ -273,7 +273,7 @@ nav ul li {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     position: relative;
-    margin-right:15px;
+    margin-right:20px;
 }
 
 nav ul li:last-child {
@@ -284,7 +284,7 @@ nav ul li a {
     color: rgba(204, 216, 219, .3);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding-bottom: 15px;
+    padding-bottom: 51px;
     letter-spacing: 5px;
 
 }
