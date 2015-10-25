@@ -164,19 +164,29 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; /* 1 */
 vertical-align: top; /* 2 */ }
 /* ==========================================================================
-Tables
+                Tables
 ========================================================================== */
 /* * Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* =========================================
-Global Styles
+            Global Styles
 ========================================= */
 
 *{
 	font: 400 1em/1.4 'Open Sans',sans-serif;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgba(161, 169, 176, 1);
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+p{
+    color: #a89b7b;
 }
 
 /* --------- Animation Delays -------------- */
@@ -208,7 +218,7 @@ Global Styles
 }
 
 /* =========================================
-Welcome CTA
+                Header
 ========================================= */
 /*
     gold --- #a89b7b; 
@@ -224,33 +234,6 @@ Welcome CTA
 #bsd-header-logo{
     margin-bottom: 25px;
 }
-
-#bsd-welcome {
-    background-color: #1f2324;
-    padding-top: 25vh;
-}
-
-#bsd-welcome h1 {
-    color: rgba(161, 169, 176, 1);
-    font-size: 40px;
-    letter-spacing: 12px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-}
-
-#bsd-welcome p{
-    color: #a89b7b;
-    letter-spacing: 3px;
-    margin-bottom: 20vh;
-    font-size: 1.3em;
-}
-
-#bsd-welcome span{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-
 
 nav {
    position: absolute;
@@ -295,20 +278,51 @@ nav ul li a:focus {
     color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #a89b7b;
 }
-#recnet-works-btn{
-    font-size: 1.2em;
-    color: #a89b7b;
-}
-#recnet-works-btn:hover{
-    text-decoration: none;
+nav ul li a:active{
+    outline: none;
 }
 
-/*Behind the Design*/
+/* =========================================
+              Welcome CTA
+========================================= */
 
-#behind-the-design{
+#bsd-welcome {
     background-color: #1f2324;
-    height: 100vh;
+    padding-top: 25vh;
 }
+
+#bsd-welcome p{
+    letter-spacing: 3px;
+    margin-bottom: 20vh;
+    font-size: 1.3em;
+}
+
+#bsd-welcome h1{
+    font-size: 40px;
+}
+
+#bsd-welcome span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* =========================================
+        About Brock Stone Design
+========================================= */
+
+#about-bsd{
+    padding-top: 10vh;
+}
+
+#about-bsd p{
+    color: rgba(161,169,176,.5);
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin: 100px 0px 100px 0px;
+}
+
+
+
 
 
 
