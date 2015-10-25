@@ -198,6 +198,10 @@ Global Styles
 	background-color: rgba(255,255,255,.03);
 }
 
+.bsd-section{
+    background-color: #1f2324; /*black*/
+    min-height: 100vh;
+}
 
 /* =========================================
 Welcome CTA
@@ -205,24 +209,17 @@ Welcome CTA
 /*gold - color: #a89b7b; 
 silver - a1a9b0;
 */
-#bsd-welcome-logo {
-    margin-bottom: 25px;
-}
 
-.bsd-header{
+#bsd-header{
+    background-color: #1f2324;
     border-bottom: 1px solid rgba(204, 216, 219, .07);
+    padding: 25px 0px 25px 0px;
     position: relative;
 }
 
-.bsd-welcome {
-    min-height: 100vh;
+#bsd-welcome {
     background-color: #1f2324;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 50px;
-    height: auto;
+    position: relative;
 }
 
 .bsd-welcome h1 {
@@ -249,7 +246,9 @@ silver - a1a9b0;
 
 
 nav {
-   
+   position: absolute;
+   bottom: 0;
+   right: 0;
 }
 
 nav ul {
@@ -267,7 +266,7 @@ nav ul li {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     position: relative;
-    margin-right:20px;
+    margin-right:10px;
     width: 120px;
 }
 

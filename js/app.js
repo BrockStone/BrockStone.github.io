@@ -2,15 +2,22 @@ var bsdApp = angular.module('bsdApp', ['ngRoute']);
 
 // configure our routes
 bsdApp.config(function($routeProvider) {
+    
     $routeProvider
-
-        // Home-page Route
+        
+        // Welcome !
         .when('/', {
             templateUrl : 'views/welcome.html',
             controller  : 'mainCtrl'
         })
 
-        // Dream-Collective Route
+        //
+        .when('/about', {
+            templateUrl : 'views/about.html',
+            controller  : 'mainCtrl'
+        })
+
+        // Dream-Collective
         .when('/dream-collective', {
             templateUrl : 'views/dream-collective.html',
             controller  : 'dreamCtrl'
@@ -19,7 +26,6 @@ bsdApp.config(function($routeProvider) {
 
 // Factory to Dynamically set the page title
 bsdApp.factory('Page', function(){
-    
     return {
         title: function() { return title; },
         setTitle: function(newTitle) { title = newTitle; }
