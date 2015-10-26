@@ -11,9 +11,15 @@ bsdApp.config(function($routeProvider) {
             controller  : 'mainCtrl'
         })
 
-        //
+        // About
         .when('/about', {
             templateUrl : 'views/about.html',
+            controller  : 'mainCtrl'
+        })
+
+        // works
+        .when('/works', {
+            templateUrl : 'views/works.html',
             controller  : 'mainCtrl'
         })
 
