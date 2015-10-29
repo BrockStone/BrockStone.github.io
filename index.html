@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="bsdApp" ng-controller="mainCtrl"> <!-- Angular Init -->
 	<head>
+
 		<!-- Basic Site Info   -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -10,7 +11,7 @@
 		<meta name="Author" content="Brock Stone" />
 		
 		<!-- Title -->
-		<title>{{Page.title()}}</title>
+		<title>Brock Stone Design</title>
 
 		<!-- Favicon / shortcut icon-->
 		<link rel="icon" href="images/bsd_fav.ico" type="image/x-icon">
@@ -19,10 +20,7 @@
 		<!-- Fonts / typekit-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		
-		<script src="//use.typekit.net/omh2uva.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
-		
+			
 		<!-- BootStrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -35,59 +33,56 @@
 		<!-- Angular -->
 		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js'></script>
     	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-route.js'></script>
-    	 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 		
 	</head>
 	<body class="bsd-section">
-
+		
+		<!-- Main header / navigation -->
 		<div id="bsd-header">
 			<div class="container">
 				<div class="col-lg-12">
-				<!-- Main Logo -->
-				<a href="#/">
-		        	<svg version="1.1" class="animated fadeInDown delay-05s" id="bsd-header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						height="65px" viewBox="0 0 235.272 327.543" enable-background="new 0 0 235.272 327.543"
-						xml:space="preserve">
-						<g>
-							<polygon fill="#a1a9b0" points="197.146,75.179 197.146,55.455 197.146,43.346 197.146,33.192 157.123,48.99 157.123,48.809 
-							136.412,57.059 136.412,57.162 79.108,79.784 79.108,81.369 79.108,102.048 79.108,133.367 99.814,125.122 99.814,93.872 
-							176.434,63.63 176.434,75.179 	"/>
-							<polygon fill="#a1a9b0" points="184.96,212.504 184.96,203.554 184.96,164.967 164.251,173.215 164.251,211.729 59.795,252.962 
-							59.795,167.413 79.108,159.793 79.108,160.054 99.814,151.811 99.814,151.617 164.251,126.181 164.251,142.054 184.96,133.807 
-							184.96,118.007 184.96,107.147 184.96,95.742 157.123,106.732 157.123,75.487 136.412,83.732 136.412,114.906 59.795,145.147 
-							59.795,67.004 136.412,36.761 136.412,52.6 157.123,44.354 157.123,28.586 157.123,16.472 157.123,6.323 39.089,52.915 
-							39.089,55.498 39.089,75.179 39.089,153.324 39.089,175.586 39.089,261.137 7.83,273.473 19.545,291.111 184.96,225.818 	"/>
-							<polygon fill="#a1a9b0" points="184.96,138.411 184.96,138.266 164.251,146.513 164.251,146.584 99.814,172.019 99.814,156.265 
-							79.108,164.513 79.108,180.193 79.108,195.385 79.108,202.458 204.272,153.053 204.272,238.601 47.85,300.344 59.564,317.983 
-							224.982,252.69 224.982,239.376 224.982,230.426 224.982,144.877 224.982,134.015 224.982,122.617 	"/>
-						</g>
-					</svg>
-				</a>
+					
+					<!-- Main Logo -->
+					<a href ui-sref="home">
+				        	<svg version="1.1" class="animated fadeInDown delay-05s" id="bsd-header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							height="65px" viewBox="0 0 235.272 327.543" enable-background="new 0 0 235.272 327.543"
+							xml:space="preserve">
+							<g>
+								<polygon fill="#a1a9b0" points="197.146,75.179 197.146,55.455 197.146,43.346 197.146,33.192 157.123,48.99 157.123,48.809 
+								136.412,57.059 136.412,57.162 79.108,79.784 79.108,81.369 79.108,102.048 79.108,133.367 99.814,125.122 99.814,93.872 
+								176.434,63.63 176.434,75.179 	"/>
+								<polygon fill="#a1a9b0" points="184.96,212.504 184.96,203.554 184.96,164.967 164.251,173.215 164.251,211.729 59.795,252.962 
+								59.795,167.413 79.108,159.793 79.108,160.054 99.814,151.811 99.814,151.617 164.251,126.181 164.251,142.054 184.96,133.807 
+								184.96,118.007 184.96,107.147 184.96,95.742 157.123,106.732 157.123,75.487 136.412,83.732 136.412,114.906 59.795,145.147 
+								59.795,67.004 136.412,36.761 136.412,52.6 157.123,44.354 157.123,28.586 157.123,16.472 157.123,6.323 39.089,52.915 
+								39.089,55.498 39.089,75.179 39.089,153.324 39.089,175.586 39.089,261.137 7.83,273.473 19.545,291.111 184.96,225.818 	"/>
+								<polygon fill="#a1a9b0" points="184.96,138.411 184.96,138.266 164.251,146.513 164.251,146.584 99.814,172.019 99.814,156.265 
+								79.108,164.513 79.108,180.193 79.108,195.385 79.108,202.458 204.272,153.053 204.272,238.601 47.85,300.344 59.564,317.983 
+								224.982,252.69 224.982,239.376 224.982,230.426 224.982,144.877 224.982,134.015 224.982,122.617 	"/>
+							</g>
+						</svg>
+					</a>
 
-				<!-- Main Navigation -->
-	            <nav>
-	                <ul>
-	                    <li class="animated fadeInDown delay-05s"><a href="#/about">ABOUT</a></li>
-	                    <li class="animated fadeInDown delay-06s"><a href="#/works">WORKS</a></li>
-	                    <li class="animated fadeInDown delay-07s"><a href="#/contact">CONTACT</a></li>
-	                </ul>
-	            </nav>
-	            </div>
-	        </div>  
+					<!-- Main Navigation -->
+		            <nav>
+		                <ul>
+		                    <li class="animated fadeInDown delay-05s"><a ui-sref="about" ui-sref-active="active">ABOUT</a></li>
+		                    <li class="animated fadeInDown delay-06s"><a ui-sref="works" ui-sref-active="active">WORKS</a></li>
+		                    <li class="animated fadeInDown delay-07s"><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+		                </ul>
+		            </nav>
 
-
-        </div>
+	            </div> <!-- col-lg-12 -->
+	        </div> <!-- /container -->
+        </div> <!-- /bsd-header -->
 	
 		<!-- Angular Templating -->
         <div ui-view>
         	<!-- This is where my content will be injected -->
         </div>
 		
-		<!-- 
-		||||||||||||||||||||||||||||||||||
-			Mon Javascript Fantastique! 
-		||||||||||||||||||||||||||||||||||
-		-->
+		<!-- Mon Javascript  -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/app.js"></script>
 

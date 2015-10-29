@@ -299,12 +299,14 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a:focus {
+nav ul li a:focus,
+nav ul li a.active {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #a89b7b;
+    outline: none;
 }
-nav ul li a:active{
+nav ul li a.active{
     outline: none;
 }
 
@@ -388,6 +390,7 @@ nav ul li a:active{
 
 #drop iframe{
 }
+
 
 
 
