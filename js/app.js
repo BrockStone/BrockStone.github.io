@@ -1,37 +1,43 @@
-var bsdApp = angular.module('bsdApp', ['ngRoute']);
+var bsdApp = angular.module('bsdApp', ['ui.router']);
 
 // configure our routes
-bsdApp.config(function($routeProvider) {
+bsdApp.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/');
     
-    $routeProvider
-        
+    $stateProvider
+            
         // Welcome !
-        .when('/', {
+        .state('home', {
+            url: '/',
             templateUrl : 'views/welcome.html',
             controller  : 'mainCtrl'
         })
 
         // About
-        .when('/about', {
+        .state('about', {
+            url: '/about',
             templateUrl : 'views/about.html',
             controller  : 'mainCtrl'
         })
 
         // works
-        .when('/works', {
+        .state('works', {
+            url: '/works',
             templateUrl : 'views/works.html',
             controller  : 'mainCtrl'
         })
 
         // drop
-        .when('/drop', {
+        .state('drop', {
+            url: '/drops',
             templateUrl : 'views/drop.html',
             controller  : 'mainCtrl'
         })
 
 
         // Dream-Collective
-        .when('/dream-collective', {
+        .state('/dream-collective', {
             templateUrl : 'views/dream-collective.html',
             controller  : 'dreamCtrl'
         })
