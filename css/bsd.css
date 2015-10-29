@@ -194,6 +194,7 @@ p{
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-06s { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
 .delay-07s { animation-delay: 0.7s; -webkit-animation-delay: 0.7s; }
+.delay-08s { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; }
 
 .delay-1s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
 .delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
@@ -311,6 +312,30 @@ nav ul li a.active{
 }
 
 /* =========================================
+             Global Footer
+========================================= */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1f2324;
+    border-top: 1px solid rgba(204, 216, 219, .07);
+}
+.footer a,
+.footer p{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgba(204, 216, 219, .3);
+}
+
+.footer a:hover{
+    color: #a89b7b;
+}
+
+/* =========================================
               Welcome CTA
 ========================================= */
 
@@ -321,12 +346,13 @@ nav ul li a.active{
 
 #bsd-welcome p{
     letter-spacing: 3px;
-    margin-bottom: 20vh;
+    margin-bottom: 30px;
     font-size: 1.3em;
 }
 
 #bsd-welcome h1{
     font-size: 40px;
+    letter-spacing: 10px;
 }
 
 #bsd-welcome span{
@@ -348,6 +374,10 @@ nav ul li a.active{
     letter-spacing: 1px;
     margin: 100px 0px 100px 0px;
 }
+
+/* =========================================
+                Recent Works
+========================================= */
 
 #works h1{
     padding: 30px 0px 30px 0px;
@@ -386,11 +416,6 @@ nav ul li a.active{
     opacity: 0; /* Fix to make div clickable in IE */
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
-
-
-#drop iframe{
-}
-
 
 
 
