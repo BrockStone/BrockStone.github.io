@@ -217,6 +217,25 @@ p{
     background-color: #1f2324; /*black*/
 }
 
+.project-upper{
+     border-bottom: 1px solid rgba(204, 216, 219, .07);
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+
+.video-responsive{
+    overflow:hidden;
+    position:relative;
+    height:100%;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 /* =========================================
                 Header
 ========================================= */
@@ -356,6 +375,10 @@ nav ul li a:active{
     background-color: #FFF; /* Fix to make div clickable in IE */
     opacity: 0; /* Fix to make div clickable in IE */
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+
+#drop iframe{
 }
 
 

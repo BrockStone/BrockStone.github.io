@@ -23,11 +23,19 @@ bsdApp.config(function($routeProvider) {
             controller  : 'mainCtrl'
         })
 
+        // drop
+        .when('/drop', {
+            templateUrl : 'views/drop.html',
+            controller  : 'mainCtrl'
+        })
+
+
         // Dream-Collective
         .when('/dream-collective', {
             templateUrl : 'views/dream-collective.html',
             controller  : 'dreamCtrl'
         })
+
 });
 
 // Factory to Dynamically set the page title
