@@ -30,8 +30,15 @@ bsdApp.config(function($stateProvider, $urlRouterProvider) {
 
         // drop
         .state('drop', {
-            url: '/drops',
+            url: '/drop',
             templateUrl : 'views/drop.html',
+            controller  : 'mainCtrl'
+        })
+
+        // dream
+        .state('dream', {
+            url: '/dream',
+            templateUrl : 'views/dream.html',
             controller  : 'mainCtrl'
         })
 
