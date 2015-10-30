@@ -335,6 +335,10 @@ nav ul li a.active{
     color: #a89b7b;
 }
 
+#social-footer{
+    float: right;
+}
+
 /* =========================================
               Welcome CTA
 ========================================= */
@@ -416,6 +420,65 @@ nav ul li a.active{
     opacity: 0; /* Fix to make div clickable in IE */
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        #bsd-welcome {
+            padding: 0px;
+            margin-bottom: 25px;
+        }
+        .footer{
+            text-align: center;
+            position: relative;
+        }
+        #social-footer{
+            float: none;
+            padding-top: 15px;
+        }
+        #links{
+            margin-bottom: 25px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        #bsd-welcome {
+            padding: 0px;
+            margin-bottom: 25px;
+        }
+        .footer{
+            text-align: center;
+            position: relative;
+        }
+        #social-footer{
+            float: none;
+            padding-top: 15px;
+        }
+        #links{
+            margin-bottom: 25px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
 
 
 
