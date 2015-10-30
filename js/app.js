@@ -42,13 +42,6 @@ bsdApp.config(function($stateProvider, $urlRouterProvider) {
             controller  : 'mainCtrl'
         })
 
-
-        // Dream-Collective
-        .state('/dream-collective', {
-            templateUrl : 'views/dream-collective.html',
-            controller  : 'dreamCtrl'
-        })
-
 });
 
 // Factory to Dynamically set the page title
